@@ -1,0 +1,118 @@
+:root {
+    --primaryColor: #B07D62;
+    --secondaryColor: #f7bcf7;
+    --lightColor: white;
+    --bgColor: #212529;
+    --bgColor2: #343A40;
+    --bgColor3: #ADB5BD;
+    --padding: 8%;
+}
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+    scroll-behavior: smooth;
+    background-color: var(--bgColor3);
+}
+
+nav {
+    margin: 0;
+    width: 100%;
+    background-color: var(--bgColor);
+
+}
+
+a img {
+    border: 1px outset grey;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 2.65rem;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--bgColor)
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    box-sizing: border-box;
+    background-color: none;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    padding: 40px;
+    border: 2px outset white;
+    background-color: var(--bgColor2);
+}
+
+.gallery img {
+    width: 100%;
+    padding: 10px
+}
+
+
+/*================================================================
+------------------------- Footer Section
+================================================================*/
+
+footer {
+    padding: 2rem var(--padding);
+    background-color: var(--bgColor);
+}
+
+footer .content-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .content-footer p {
+    color: var(--lightColor);
+    text-align: center;
+    width: 500px;
+    margin-top: 1rem;
+}
+
+footer .content-footer .end {
+    color: var(--bgColor3);
+    margin-top: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+footer a:hover {
+    color: var(--lightColor);
+}
+
+footer span {
+    color: var(--lightColor);
+}
